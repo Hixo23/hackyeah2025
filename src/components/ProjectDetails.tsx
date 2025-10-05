@@ -18,7 +18,7 @@ const ProjectDetails = ({ project, onClose }: ProjectDetailsProps) => {
 
   const handleAskForFriend = () => {
     onClose();
-    // Mock action
+    navigate("/share-with-parent", { state: { project } });
   };
 
   return (
